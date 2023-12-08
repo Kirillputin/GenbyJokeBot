@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS jokes
+(
+    id       SERIAL PRIMARY KEY,
+    category VARCHAR(10),
+    joke     varchar
+);
+
+CREATE TABLE IF NOT EXISTS exception_joke
+(
+    id          SERIAL PRIMARY KEY,
+    chatid      integer,
+    number_joke integer
+);
